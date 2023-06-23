@@ -2,7 +2,7 @@ from playwright.sync_api import Locator, Page
 
 
 class LoginPage:
-    def __init__(self, page):
+    def __init__(self, page: Page):
         self.page: Page = page
         self.url: str = "https://www.saucedemo.com"
         self.username_input: Locator = page.locator('[data-test="username"]')
